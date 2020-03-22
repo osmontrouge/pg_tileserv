@@ -49,7 +49,7 @@ var globalPostGISVersion int = 0
 func init() {
 	viper.SetDefault("DbConnection", "sslmode=disable")
 	viper.SetDefault("HttpHost", "0.0.0.0")
-	viper.SetDefault("HttpPort", 7800)
+	viper.SetDefault("HttpPort", os.Getenv("PORT"))
 	viper.SetDefault("UrlBase", "")
 	viper.SetDefault("DefaultResolution", 4096)
 	viper.SetDefault("DefaultBuffer", 256)
