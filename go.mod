@@ -1,3 +1,4 @@
+// +scalingo goVersion go1.13
 module github.com/CrunchyData/pg_tileserv
 
 go 1.13
